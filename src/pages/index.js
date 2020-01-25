@@ -9,14 +9,18 @@ import Brands from '@sections/Brands';
 import Team from '@sections/Team';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
+import Schedule from '../components/sections/Schedule';
+import Social from '../components/sections/Social';
 
 const IndexPage = () => (
   <Layout>
     <Navbar />
     <Header />
-    <About />
-    <Brands />
-    <Team />
+    <Schedule />
+    <Social />
+    {/*<About />*/}
+    {/*<Brands />*/}
+    {/*<Team />*/}
     <Faq />
     <Footer />
   </Layout>

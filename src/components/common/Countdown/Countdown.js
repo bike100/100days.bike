@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper } from './style';
 
+// https://github.com/kristinbaumann/react-countdown/tree/master/src
 class Countdown extends Component {
   constructor(props) {
     super(props);
@@ -103,12 +104,12 @@ class Countdown extends Component {
           </span>
         </span>
 
-        <span className="Countdown-col">
-          <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-            <span>Sec</span>
-          </span>
-        </span>
+        {/*<span className="Countdown-col">*/}
+        {/*  <span className="Countdown-col-element">*/}
+        {/*    <strong>{this.addLeadingZeros(countDown.sec)}</strong>*/}
+        {/*    <span>Sec</span>*/}
+        {/*  </span>*/}
+        {/*</span>*/}
       </div>
       </Wrapper>
     );

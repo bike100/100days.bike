@@ -7,9 +7,58 @@ import Countdown from '../common/Countdown';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import TextLoop from 'react-text-loop/es';
+
+function shuffle(array) {
+  let counter = array.length;
+
+  // While there are elements in the array
+  while (counter > 0) {
+    // Pick a random index
+    let index = Math.floor(Math.random() * counter);
+
+    // Decrease counter by 1
+    counter--;
+
+    // And swap the last element with it
+    let temp = array[counter];
+    array[counter] = array[index];
+    array[index] = temp;
+  }
+
+  return array;
+}
+var words = ['fun',
+  'friends',
+  'adventure',
+  'pie',
+  'enjoyable commutes',
+  'healthy choices',
+  'sustainability',
+  'shameless sweat',
+  'practicality',
+  'summer',
+  'childlike awe',
+  'new routes',
+  'spontaneous stops',
+  'smiling miles',
+  'exercise',
+  'classic elegance',
+  'efficiency in motion',
+  'safety',
+  'grocery getting',
+  'breaking stereotypes',
+  'paper mache!',
+  'parades',
+  'gear swaps',
+  'community',
+];
+words = shuffle(words);
 
 const Header = () => (
   // this.date = new Date("June 02, 2020 00:00:00 GMT-05:00");
+
+
   <StaticQuery
     query={graphql`
       query {
@@ -36,55 +85,8 @@ const Header = () => (
               <h1>
                 100 Days of
                 <br />
-                fun
-                <br />
-                friends
-                <br/>
-                adventure
-                <br/>
-                pie
-                <br/>
-                enjoyable commutes
-                <br/>
-                healthy choices
-                <br/>
-                sustainability
-                <br/>
-                punk rock
-                <br/>
-                shameless sweat
-                <br/>
-                bicycling
-                <br/>
-                practicality
-                <br/>
-                summer
-                <br/>
-                childlike awe
-                <br/>
-                new routes
-                <br/>
-                spontaneous stops
-                <br/>
-                smiling miles
-                <br/>
-                exercise
-                <br/>
-                classic elegance
-                <br/>
-                efficiency in motion
-                <br/>
-                traditional practicality
-                <br/>
-                grocery getting
-                <br/>
-                breaking stereotypes
-                <br/>
-                paper mache!
-                <br/>
-                parades
-                <br/>
-                gear swaps
+                <TextLoop interval={5000} children={words}>
+                </TextLoop>
               </h1>
               <br />
               <p>
@@ -94,13 +96,6 @@ const Header = () => (
               </p>
             </Text>
           </Grid>
-          <Banner>
-            <Text>
-              <h3>
-                <Countdown date={'June 02, 2020 00:00:00 GMT-05:00'}/>
-              </h3>
-            </Text>
-          </Banner>
         </Container>
       </HeaderWrapper>
     )}
@@ -116,13 +111,6 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-const Banner = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  margin-bottom: 64px;
-  margin-top: 64px;
-`;
 
 const Art = styled.figure`
   width: 100%;
