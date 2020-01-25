@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'A summer-long bicycle celebration in Milwaukee, WI',
-  title: '100 Days of Biking',
+  title: '100 Days of Biking (Milwaukee, WI)',
   url: '100days.bike',
   author: 'whilei',
   keywords: ['bicycles', 'festival', 'bike', 'bikes', 'milwaukee', 'wisconsin', 'event', 'community'],

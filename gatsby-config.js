@@ -61,7 +61,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `100 Days of Bicycling`,
-        short_name: `Bike 100`,
+        short_name: `100 Days of Biking`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,

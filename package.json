@@ -1,7 +1,7 @@
 {
   "name": "100days.bike",
   "private": true,
-  "description": "Bike 100 Days Website",
+  "description": "100 Days of Biking Website",
   "version": "0.1.0",
   "author": "Isaac A <benefitsbybike@gmail.com>",
   "dependencies": {

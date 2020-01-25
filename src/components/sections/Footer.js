@@ -68,7 +68,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Bike 100 Days</h2>
+              <h2>100 Days of Biking</h2>
               <span>
                 June 2 thru Sept 10, 2020, in and around Milwaukee, WI
               </span>
