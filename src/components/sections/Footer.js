@@ -77,7 +77,7 @@ const Footer = () => (
               {/*  </ExternalLink>*/}
               {/*</span>*/}
               <span>
-                June 2 -> Sept 10, 2020 @ Milwaukee, WI
+                June 2 thru Sept 10, 2020 @ Milwaukee, WI
               </span>
             </Copyright>
             <SocialIcons>
@@ -109,7 +109,10 @@ const SocialIcons = styled.div`
 `;
 
 const FooterWrapper = styled.footer`
-  background-color: ${props => props.theme.color.primary};
+  background-color: ${props => props.theme.color.white.regular};
+  // background-color: ${props => props.theme.color.primary};
+  border-top: 6px dashed ${props => props.theme.color.secondary};
+  margin-top: 2rem;
   padding: 32px 0;
 `;
 

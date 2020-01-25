@@ -17,11 +17,11 @@ const SOCIAL = [
   },
   {
     icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://www.instagram.com/bike100days',
   },
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/hashtag/bike100',
   },
 ];
 

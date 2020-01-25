@@ -28,16 +28,18 @@ function shuffle(array) {
 
   return array;
 }
-var words = ['fun',
+var words = [
+  'fun in the sun',
   'friends',
   'adventure',
   'pie',
+  'memories',
   'enjoyable commutes',
   'healthy choices',
   'sustainability',
   'shameless sweat',
   'practicality',
-  'summer',
+  'a memorable summer',
   'childlike awe',
   'new routes',
   'spontaneous stops',
@@ -45,13 +47,17 @@ var words = ['fun',
   'exercise',
   'classic elegance',
   'efficiency in motion',
-  'safety',
+  'safe riding',
   'grocery getting',
   'breaking stereotypes',
-  'paper mache!',
+  'paper maché!',
   'parades',
-  'gear swaps',
   'community',
+  'balancing acts',
+  'cameraderie',
+  'thirst-queching gulps',
+  'seeing cyclists',
+  'collaboration',
 ];
 words = shuffle(words);
 
