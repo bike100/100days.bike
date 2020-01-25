@@ -88,12 +88,12 @@ const Header = () => (
                 <TextLoop interval={5000} children={words}>
                 </TextLoop>
               </h1>
-              <br />
-              <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p>
+              {/*<br />*/}
+              {/*<p>*/}
+              {/*  <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">*/}
+              {/*    Check out source &nbsp;&#x2794;*/}
+              {/*  </StyledExternalLink>*/}
+              {/*</p>*/}
             </Text>
           </Grid>
         </Container>

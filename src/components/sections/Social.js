@@ -27,7 +27,7 @@ class Social extends Component {
 
   render() {
     return (
-      <Section>
+      <Section id="social" style={{}}>
         <Container>
           <SocialIcons>
           <Centerer>
@@ -67,7 +67,7 @@ const SocialIcons = styled.div`
   align-items: center;
   justify-items: center;
   img {
-    margin: 0 24px;
+    margin: 0 8px;
     width: 96px;
     height: 96px;
     

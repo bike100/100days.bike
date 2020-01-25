@@ -7,58 +7,61 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: '100 days of what, exactly?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        From meetups to group rides, from picnics to races.
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'Do I have to sign up to join in?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        Nope! Just bring your awesome self (and maybe your two wheels... and maybe pie).
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'Where should I meet you to join in?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        Events happen all over <ExternalLink>Milwaukee, Wisconsin</ExternalLink>. Common meeting places include ...
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'Can I host an event?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
+        We'd love if you would! Follow <ExternalLink>this link</ExternalLink> to find a short form to fill out. That's it!
       </>
     ),
   },
   {
-    title: 'What exactly does Gatsby build?',
+    title: 'How long has this been going on?',
     content: () => (
       <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        2020 will be our <strong>3<sup>rd</sup> year running. Well, biking.</strong>
+      </>
+    ),
+  },
+  {
+    title: 'Who\'s in charge here?',
+    content: () => (
+      <>
+        This is a community sponsored event, and intends at every level to harness the diversity, spontaneity,
+        and collective energy of our many supporters and friends.
+      </>
+    ),
+  },
+  {
+    title: 'I\'d love to help out in more ways?!',
+    content: () => (
+      <>
+        Suh-weet! We're always open to <strong>sponsorships</strong>, <strong>endorsements</strong>, <strong>good
+        PR</strong>,
+        and, of course, word of mouth!
       </>
     ),
   },
