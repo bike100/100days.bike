@@ -77,7 +77,7 @@ const Footer = () => (
               {/*  </ExternalLink>*/}
               {/*</span>*/}
               <span>
-                June 2 thru Sept 10, 2020 @ Milwaukee, WI
+                June 2 thru Sept 10, 2020 in and around Milwaukee, WI
               </span>
             </Copyright>
             <SocialIcons>
