@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
+  description: 'A summer-long bicycle celebration in Milwaukee, WI',
   title: '100 Days of Biking',
-  url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  url: '100days.bike',
+  author: 'whilei',
+  keywords: ['bicycles', 'festival', 'bike', 'bikes', 'milwaukee', 'wisconsin', 'event', 'community'],
   twitter: {
-    id: '@ajayns08',
+    id: '',
     img: '',
   },
   facebook: {
