@@ -23,7 +23,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'Where should I meet you to join in?',
+    title: 'Where do we meet?',
     content: () => (
       <>
         Events start, end -- and ride through ;) -- all over <ExternalLink href="https://www.google.com/maps/place/Milwaukee,+WI,+USA/@43.0578701,-88.037469,12z/data=!3m1!4b1!4m5!3m4!1s0x880502d7578b47e7:0x445f1922b5417b84!8m2!3d43.0389025!4d-87.9064736">Milwaukee</ExternalLink>. Common meeting places include&nbsp;
@@ -32,7 +32,8 @@ const FAQS = [
         <ExternalLink href="http://www.vulturespace.org/">Vulture Space</ExternalLink>,&nbsp;
         <ExternalLink href="https://www.purpledooricecream.com/">Purple Door Icecream</ExternalLink>,&nbsp;
         <ExternalLink href="https://anodynecoffee.com/">Anodyne Coffee</ExternalLink>, and the&nbsp;
-        <ExternalLink href="https://www.riverwestcoop.org/">Riverwest Coop & Cafe</ExternalLink>.
+        <ExternalLink href="https://www.riverwestcoop.org/">Riverwest Coop & Cafe</ExternalLink>. Check out individual events for
+        specific information.
       </>
     ),
   },
@@ -40,7 +41,7 @@ const FAQS = [
     title: 'Can I host an event?',
     content: () => (
       <>
-        We'd love if you would! Follow <ExternalLink href="http://www.bike100days.com/contact/">this link</ExternalLink> to find a short form to fill out. That's it!
+        We'd love if you would! Just fill out <ExternalLink href="http://www.bike100days.com/contact/">this short form</ExternalLink>. That's it!
       </>
     ),
   },
@@ -56,8 +57,8 @@ const FAQS = [
     title: 'Who\'s in charge here?',
     content: () => (
       <>
-        This is a community sponsored event, and intends at every level to harness the diversity, spontaneity,
-        and collective energy of our many supporters and friends.
+        This is a community-built event, and intends at every level to harness the diversity, spontaneity,
+        strengths, relationships, and collective energy of our many supporters and friends.
       </>
     ),
   },
@@ -67,7 +68,7 @@ const FAQS = [
       <>
         Suh-weet! We're always open to <strong>sponsorships</strong>, <strong>endorsements</strong>, <strong>good
         PR</strong>,
-        and, of course, word of mouth!
+        and, of course, <strong>word of mouth</strong>!
       </>
     ),
   },

@@ -5,12 +5,8 @@ import { Container, Section } from '@components/global';
 import theme from '@styles/theme';
 
 class Schedule extends Component {
-
   render() {
     const sectionStyle = {
-      // backgroundColor: theme.color.secondary,
-      // color: theme.color.white.regular,
-
       color: theme.color.secondary,
       paddingBottom: '10px',
     };
