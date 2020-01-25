@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import Countdown from '../common/Countdown';
-
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 import TextLoop from 'react-text-loop/es';
@@ -58,6 +56,9 @@ var words = [
   'deserving a donut',
   'seeing cyclists',
   'collaboration',
+  'pedal power!',
+  'aprés ride',
+  'helmet hair',
 ];
 words = shuffle(words);
 
@@ -70,11 +71,11 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "bike-art-julia-1" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -124,7 +125,7 @@ const Art = styled.figure`
 
   > div {
     width: 120%;
-    margin-bottom: -4.5%;
+    margin: 6rem 0 -4.5% 0;
 
     @media (max-width: ${props => props.theme.screen.md}) {
       width: 100%;
