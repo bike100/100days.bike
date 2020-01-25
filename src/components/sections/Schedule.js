@@ -27,13 +27,13 @@ class Schedule extends Component {
           </Text>
         </Banner>
 
-      <Banner>
-        <Text>
-          <h5>
-            <Countdown date={'June 02, 2020 00:00:00 GMT-05:00'}/>
-          </h5>
-        </Text>
-      </Banner>
+      {/*<Banner>*/}
+      {/*  <Text>*/}
+      {/*    <h5>*/}
+      {/*      <Countdown date={'June 02, 2020 00:00:00 GMT-05:00'}/>*/}
+      {/*    </h5>*/}
+      {/*  </Text>*/}
+      {/*</Banner>*/}
         </Container>
       </Section>
     );

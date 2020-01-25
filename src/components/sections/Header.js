@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 import TextLoop from 'react-text-loop/es';
+import Countdown from '../common/Countdown';
 
 function shuffle(array) {
   let counter = array.length;
@@ -37,7 +38,7 @@ var words = [
   'sustainability',
   'shameless sweat',
   'practicality',
-  'a memorable <br/> summer',
+  'a memorable summer',
   'childlike awe',
   'new routes',
   'spontaneous stops',
@@ -89,12 +90,12 @@ const Header = () => (
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
-            <Text style={{minHeight: '11rem'}}>
-              <h1>
+            <Text >
+              <h1 style={{minHeight: '15rem'}}>
                 100 Days of
                 <br />
                 <span>
-                  <TextLoop interval={5000} children={words} noWrap={false}>
+                  <TextLoop interval={4000} children={words} noWrap={false}>
                   </TextLoop>
                 </span>
               </h1>
@@ -104,6 +105,11 @@ const Header = () => (
               {/*    Check out source &nbsp;&#x2794;*/}
               {/*  </StyledExternalLink>*/}
               {/*</p>*/}
+              <span class='countdown'>
+
+                  <Countdown date={'June 02, 2020 00:00:00 GMT-05:00'}/>
+
+                  </span>
             </Text>
           </Grid>
         </Container>
@@ -125,17 +131,21 @@ const HeaderWrapper = styled.header`
 const Art = styled.figure`
   width: 100%;
   margin: 0;
-  margin: 35% 0 -4.5% 0;
+  margin: 5% 0 -4.5% 0;
   
   > div {
     width: 120%;
-    @media (max-width: ${props => props.theme.screen.sm}) {
+    @media (max-width: ${props => props.theme.screen.lg}) {
+      margin: 35% 0 -4.5% 0;
       width: 100%;
-      margin: -15% 0 -4.5% 0;
     }
-    
     @media (max-width: ${props => props.theme.screen.md}) {
+      margin: 15% 0 -4.5% 0;
       width: 100%;
+    }
+    @media (max-width: ${props => props.theme.screen.sm}) {
+      width: 80%;
+      margin: -15% 0 -4.5% 0;
     }
   }
 `;
@@ -159,8 +169,18 @@ const Grid = styled.div`
 
 const Text = styled.div`
   justify-self: center;
-  span { width: 100%; }
-
+  
+  span.countdown {
+    @media (max-width: ${props => props.theme.screen.sm}) {
+      margin-top: -1rem;
+    }
+    @media (min-width: ${props => props.theme.screen.md}) {
+      margin-top: 1rem;
+    }
+    
+    color: ${props => props.theme.color.secondary};
+  }
+  
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
   }
