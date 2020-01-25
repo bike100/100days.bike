@@ -37,7 +37,7 @@ var words = [
   'sustainability',
   'shameless sweat',
   'practicality',
-  'a memorable summer',
+  'a memorable <br/> summer',
   'childlike awe',
   'new routes',
   'spontaneous stops',
@@ -60,6 +60,7 @@ var words = [
   'aprés ride',
   'helmet hair',
 ];
+// words = [ `a memorable summer`, ];
 words = shuffle(words);
 
 const Header = () => (
@@ -88,12 +89,14 @@ const Header = () => (
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
-            <Text>
+            <Text style={{minHeight: '11rem'}}>
               <h1>
                 100 Days of
                 <br />
-                <TextLoop interval={5000} children={words}>
-                </TextLoop>
+                <span>
+                  <TextLoop interval={5000} children={words} noWrap={false}>
+                  </TextLoop>
+                </span>
               </h1>
               {/*<br />*/}
               {/*<p>*/}
@@ -149,12 +152,14 @@ const Grid = styled.div`
 
     > ${Art} {
       order: 2;
+      z-index: 100;
     }
   }
 `;
 
 const Text = styled.div`
   justify-self: center;
+  span { width: 100%; }
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
