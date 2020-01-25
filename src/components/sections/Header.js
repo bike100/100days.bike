@@ -91,7 +91,7 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text >
-              <h1 style={{minHeight: '15rem'}}>
+              <h1>
                 100 Days of
                 <br />
                 <span>
@@ -123,7 +123,10 @@ const HeaderWrapper = styled.header`
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
+    padding-top: 40% // 128px;
+  }
+  @media (min-width: ${props => props.theme.screen.md}) {
+    padding-top: 10% // 192px;
   }
 `;
 
@@ -170,9 +173,31 @@ const Grid = styled.div`
 const Text = styled.div`
   justify-self: center;
   
-  span.countdown {
+  h1 {
+    min-height: 15rem;
+    @media (max-width: ${props => props.theme.screen.xs}) {
+      min-height: 8rem;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
     @media (max-width: ${props => props.theme.screen.sm}) {
-      margin-top: -1rem;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      min-height: 10rem;
+    }
+  }
+  
+  .Countdown {
+  color: ${props => props.theme.color.secondary};
+  }
+  .Countdown .Countdown-col-element strong {
+    @media (max-width: ${props => props.theme.screen.xs}) {
+      // margin-top: 0rem;
+      font-size: 2rem;
+    }
+    @media (max-width: ${props => props.theme.screen.sm}) {
+      margin-top: 0rem;
+      font-size: 1.33rem;
     }
     @media (min-width: ${props => props.theme.screen.md}) {
       margin-top: 1rem;
