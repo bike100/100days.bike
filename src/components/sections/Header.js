@@ -52,6 +52,36 @@ const Header = () => (
                 shameless sweat
                 <br/>
                 bicycling
+                <br/>
+                practicality
+                <br/>
+                summer
+                <br/>
+                childlike awe
+                <br/>
+                new routes
+                <br/>
+                spontaneous stops
+                <br/>
+                smiling miles
+                <br/>
+                exercise
+                <br/>
+                classic elegance
+                <br/>
+                efficiency in motion
+                <br/>
+                traditional practicality
+                <br/>
+                grocery getting
+                <br/>
+                breaking stereotypes
+                <br/>
+                paper mache!
+                <br/>
+                parades
+                <br/>
+                gear swaps
               </h1>
               <br />
               <p>
