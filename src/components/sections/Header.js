@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+import Countdown from '../common/Countdown';
+
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
+  // this.date = new Date("June 02, 2020 00:00:00 GMT-05:00");
   <StaticQuery
     query={graphql`
       query {
@@ -91,6 +94,13 @@ const Header = () => (
               </p>
             </Text>
           </Grid>
+          <Banner>
+            <Text>
+              <h3>
+                <Countdown date={'June 02, 2020 00:00:00 GMT-05:00'}/>
+              </h3>
+            </Text>
+          </Banner>
         </Container>
       </HeaderWrapper>
     )}
@@ -104,6 +114,14 @@ const HeaderWrapper = styled.header`
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
   }
+`;
+
+const Banner = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: 64px;
+  margin-top: 64px;
 `;
 
 const Art = styled.figure`
