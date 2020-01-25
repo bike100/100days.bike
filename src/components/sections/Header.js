@@ -122,11 +122,15 @@ const HeaderWrapper = styled.header`
 const Art = styled.figure`
   width: 100%;
   margin: 0;
-
+  margin: 35% 0 -4.5% 0;
+  
   > div {
     width: 120%;
-    margin: 6rem 0 -4.5% 0;
-
+    @media (max-width: ${props => props.theme.screen.sm}) {
+      width: 100%;
+      margin: -15% 0 -4.5% 0;
+    }
+    
     @media (max-width: ${props => props.theme.screen.md}) {
       width: 100%;
     }
