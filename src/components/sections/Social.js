@@ -7,11 +7,13 @@ import ExternalLink from '@common/ExternalLink';
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
+// import FacebookIcon from '@static/icons/F_icon.svg';
+import FacebookIcon from '@static/icons/facebook.svg';
 
 const SOCIAL = [
   {
-    icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    icon: FacebookIcon,
+    link: 'https://facebook.com/bike100days/'
   },
   {
     icon: InstagramIcon,

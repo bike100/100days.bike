@@ -19,5 +19,8 @@ Countdown{
 
 .Countdown-col-element strong{
   font-size: 50px;
+   @media (max-width: ${props => props.theme.screen.sm}) {
+      font-size: 2.4rem;
+   }
 }
 `;

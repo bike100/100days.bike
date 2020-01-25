@@ -69,12 +69,15 @@ const Footer = () => (
           <StyledContainer>
             <Copyright>
               <h2>Bike 100 Days</h2>
+              {/*<span>*/}
+              {/*  Illustrations by*/}
+              {/*  {` `}*/}
+              {/*  <ExternalLink href="https://twitter.com/diana_valeanu">*/}
+              {/*    @diana_valeanu*/}
+              {/*  </ExternalLink>*/}
+              {/*</span>*/}
               <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
+                June 2 -> Sept 10, 2020 @ Milwaukee, WI
               </span>
             </Copyright>
             <SocialIcons>

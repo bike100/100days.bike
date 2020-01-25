@@ -15,7 +15,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'Do I have to sign up to join in?',
+    title: 'Do I need to sign up to join in?',
     content: () => (
       <>
         Nope! Just bring your awesome self (and maybe your two wheels... and maybe pie).
@@ -34,7 +34,7 @@ const FAQS = [
     title: 'Can I host an event?',
     content: () => (
       <>
-        We'd love if you would! Follow <ExternalLink>this link</ExternalLink> to find a short form to fill out. That's it!
+        We'd love if you would! Follow <ExternalLink href="http://www.bike100days.com/contact/">this link</ExternalLink> to find a short form to fill out. That's it!
       </>
     ),
   },
@@ -42,7 +42,7 @@ const FAQS = [
     title: 'How long has this been going on?',
     content: () => (
       <>
-        2020 will be our <strong>3<sup>rd</sup> year running. Well, biking.</strong>
+        2020 will be our <strong>3<sup>rd</sup> year</strong> running. Well, biking :)
       </>
     ),
   },
