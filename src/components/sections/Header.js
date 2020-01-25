@@ -28,9 +28,9 @@ function shuffle(array) {
   return array;
 }
 var words = [
+  'adventure',
   'fun in the sun',
   'friends',
-  'adventure',
   'pie',
   'memories',
   'enjoyable commutes',
