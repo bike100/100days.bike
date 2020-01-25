@@ -41,6 +41,7 @@ const About = () => (
             }
           }
         }
+        
       }
     `}
     render={data => (

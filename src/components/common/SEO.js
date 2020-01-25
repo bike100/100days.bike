@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  title: '100 Days of Biking',
   url: '',
   author: 'ajayns',
   keywords: ['gatsby', 'site', 'absurd'],

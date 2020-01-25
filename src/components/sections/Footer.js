@@ -39,16 +39,32 @@ const Footer = () => (
             }
           }
         }
+        art_bike100logo: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "bike-100-days" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1440) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
       <React.Fragment>
         <Art>
           <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
+            fluid={data.art_bike100logo.childImageSharp.fluid}
+            style={{ width: 740, maxWidth: '100%'}}
           />
         </Art>
+        {/*<Art>*/}
+        {/*  <Img*/}
+        {/*    fluid={data.art_pot.childImageSharp.fluid}*/}
+        {/*    style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}*/}
+        {/*  />*/}
+        {/*</Art>*/}
         <FooterWrapper>
           <StyledContainer>
             <Copyright>

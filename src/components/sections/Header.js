@@ -31,11 +31,27 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                100 Days of
                 <br />
-                every way
+                fun
                 <br />
-                that matters
+                friends
+                <br/>
+                adventure
+                <br/>
+                pie
+                <br/>
+                enjoyable commutes
+                <br/>
+                healthy choices
+                <br/>
+                sustainability
+                <br/>
+                punk rock
+                <br/>
+                shameless sweat
+                <br/>
+                bicycling
               </h1>
               <br />
               <p>
