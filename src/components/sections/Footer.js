@@ -109,7 +109,8 @@ const SocialIcons = styled.div`
 `;
 
 const FooterWrapper = styled.footer`
-  background-color: ${props => props.theme.color.white.regular};
+  background-color: ${props => props.theme.color.white.dark};
+  // background-color: ${props => props.theme.color.white.regular};
   // background-color: ${props => props.theme.color.primary};
   border-top: 6px dashed ${props => props.theme.color.secondary};
   margin-top: 2rem;

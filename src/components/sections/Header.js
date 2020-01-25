@@ -55,7 +55,7 @@ var words = [
   'community',
   'balancing acts',
   'cameraderie',
-  'thirst-queching gulps',
+  'deserving a donut',
   'seeing cyclists',
   'collaboration',
 ];
