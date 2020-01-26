@@ -76,7 +76,7 @@ const Footer = () => (
               <span>
                 Illustrations by
                 {` `}
-                <ExternalLink href="https://www.ahspinnaker.com/">
+                <ExternalLink href="https://www.ahspinnaker.com/" style={{color: "green"}}>
                   Julia Ardis
                 </ExternalLink>
               </span>
